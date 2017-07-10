@@ -23,6 +23,9 @@
     background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.25) 1.5%, transparent 1.5%, transparent 98.5%, rgba(255, 255, 255, 0.01) 98.5%), -webkit-linear-gradient(rgba(255, 255, 255, 0.1) 1.5%, transparent 1.5%, transparent 98.5%, rgba(255, 255, 255, 0.1) 98.5%);
     background-repeat: repeat;
     background-size: 50px 50px;
+
+    -webkit-animation: title 4s ease-in-out infinite;
+    -webkit-animation-direction: alternate;
 }
 
 #title #box-rim {
@@ -150,4 +153,13 @@
 
     -webkit-transform-origin: 0 100%;
     -webkit-transform: rotateX(-90deg) translateY(25px);
+}
+
+@-webkit-keyframes title {
+    from {
+        -webkit-transform: rotateX(60deg) rotateZ(-45deg);
+    }
+    to {
+        -webkit-transform: rotateX(65deg) rotateZ(-45deg);
+    }
 }
