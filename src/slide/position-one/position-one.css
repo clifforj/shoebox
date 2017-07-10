@@ -1,0 +1,89 @@
+#position-one #scene {
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-left: 100px;
+}
+
+#position-one #content {
+    vertical-align: middle;
+    display: inline-block;
+    width: 1170px;
+}
+
+#position-one .volume {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    -webkit-transform: rotateX(60deg) rotateZ(45deg);
+    -webkit-transform-style: preserve-3d;
+    background: -webkit-linear-gradient(left, rgb(167, 167, 167) 1.5%,transparent 1.5%,transparent 98.5%, rgb(173, 173, 173) 98.5%),-webkit-linear-gradient(rgb(204, 204, 204) 1.5%,transparent 1.5%,transparent 98.5%, rgb(184, 184, 184) 98.5%);
+    background-repeat: repeat;
+    background-size: 50px 50px;
+}
+
+#position-one .volume:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 25px 50px 0;
+    border-color: #ffffff transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -25px;
+    left: 150px;
+}
+
+#position-one .volume:before {
+    position: absolute;
+    display: block;
+    width: 400px;
+    left: -45px;
+    z-index: 1;
+    bottom: -70px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #4e4e4e;
+}
+
+#position-one .volumeLeft {
+    -webkit-transform: rotateX(60deg) rotateZ(45deg) translateX(-200px) translateY(300px);
+}
+
+#position-one .volumeRight {
+    -webkit-transform: rotateX(60deg) rotateZ(45deg) translateY(-100px) translateX(250px);
+}
+
+#position-one #boxRight, #position-one #boxLeft {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    -webkit-transform-origin: 0 100%;
+    background-color: #565656;
+}
+
+#position-one #boxRight {
+    bottom: 0;
+    -webkit-transform: rotateX(-90deg);
+}
+
+#position-one #leftInfo, #position-one #rightInfo {
+    width: 49%;
+    box-sizing: border-box;
+    margin-top: 100px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#position-one #leftInfo {
+    padding-right: 15px;
+}
+
+#position-one #rightInfo {
+    padding-left: 15px;
+}

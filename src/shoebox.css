@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    min-width: 800px;
+    font-family: sans-serif;
+}
+
+html, body, .slide {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}

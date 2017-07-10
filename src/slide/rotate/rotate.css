@@ -1,0 +1,123 @@
+#rotate #scene {
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-top: 250px;
+    margin-left: 140px;
+}
+
+#rotate .volume {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    -webkit-transform: rotateX(60deg) rotateZ(45deg);
+    -webkit-transform-style: preserve-3d;
+    background: -webkit-linear-gradient(left, rgb(167, 167, 167) 1.5%,transparent 1.5%,transparent 98.5%, rgb(173, 173, 173) 98.5%),-webkit-linear-gradient(rgb(204, 204, 204) 1.5%,transparent 1.5%,transparent 98.5%, rgb(184, 184, 184) 98.5%);
+    background-repeat: repeat;
+    background-size: 50px 50px;
+}
+
+#rotate .volume:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 25px 50px 0;
+    border-color: #ffffff transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -25px;
+    left: 100px;
+}
+
+#rotate .volume:before {
+    position: absolute;
+    display: block;
+    width: 400px;
+    left: -45px;
+    z-index: 1;
+    bottom: -70px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #4e4e4e;
+}
+
+#rotate .volumeX {
+    -webkit-transform: rotateX(60deg) rotateZ(45deg) translateX(-500px) translateY(-15px);
+}
+
+#rotate .volumeX:before {
+    content: 'Rotate X: 0 - 360';
+}
+
+#rotate .volumeY {
+    -webkit-transform: rotateX(60deg) rotateZ(45deg) translateY(-405px) translateX(-100px);
+}
+
+#rotate .volumeY:before {
+    content: 'Rotate Y: 0 - 360';
+}
+
+#rotate .volumeZ {
+    -webkit-transform: rotateX(60deg) rotateZ(45deg) translateY(75px) translateX(50px);
+}
+
+#rotate .volumeZ:before {
+    content: 'Rotate Z: 0 - 360';
+}
+
+#rotate #boxX, #rotate #boxY, #rotate #boxZ {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 50px;
+    -webkit-transform-origin: 50% 50%;
+    background-color: #454545;
+    background-size: 100% 100%;
+}
+
+#rotate #boxX {
+    -webkit-animation: xRotate 20s linear infinite;
+    background: -webkit-linear-gradient(#454545 49.5%, white 49.5%, white 50.5%, #454545 50.5%);
+}
+
+#rotate #boxY {
+    -webkit-animation: yRotate 20s linear infinite;
+    background: -webkit-linear-gradient(left, #454545 49.5%, white 49.5%, white 50.5%, #454545 50.5%);
+}
+
+#rotate #boxZ {
+    -webkit-animation: zRotate 20s linear infinite;
+    background: -webkit-linear-gradient(#454545 48.5%, transparent 48.5%, transparent 51.5%, #454545 51.5%), -webkit-linear-gradient(left, #454545 48.5%, white 48.5%, white 51.5%, #454545 51.5%);
+}
+
+@-webkit-keyframes xRotate {
+    from {
+        -webkit-transform: rotateX(-90deg) translateY(-150px) rotateX(0);
+    }
+    to {
+        -webkit-transform: rotateX(-90deg) translateY(-150px) rotateX(360deg);
+    }
+}
+
+@-webkit-keyframes yRotate {
+    from {
+        -webkit-transform: rotateX(-90deg) translateY(-150px) rotateY(0);
+    }
+    to {
+        -webkit-transform: rotateX(-90deg) translateY(-150px) rotateY(360deg);
+    }
+}
+
+@-webkit-keyframes zRotate {
+    from {
+        -webkit-transform: rotateX(-90deg) translateY(-150px) rotateZ(0);
+    }
+    to {
+        -webkit-transform: rotateX(-90deg) translateY(-150px) rotateZ(360deg);
+    }
+}

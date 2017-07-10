@@ -1,0 +1,93 @@
+#animation-one #scene {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-left: 100px;
+}
+
+#animation-one .volume {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    -webkit-transform: rotateX(45deg) rotateZ(45deg) translateY(100px);
+    -webkit-transform-style: preserve-3d;
+    text-align: left;
+}
+
+#animation-one .volume:before {
+    position: absolute;
+    display: block;
+    width: 400px;
+    left: -45px;
+    z-index: 1;
+    bottom: -70px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #4e4e4e;
+}
+
+#animation-one .box {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+    display: inline-block;
+    transform-style: preserve-3d;
+    -webkit-animation: animationOneBounce 2.4s ease-in-out infinite;
+    -webkit-animation-direction: alternate;
+
+}
+
+#animation-one .box:before, .box:after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    bottom: 0;
+    transform-origin: 0 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #6b6b6b;
+}
+
+#animation-one .box:before {
+    transform: rotateX(-90deg) translateY(100%);
+    background-color: #bdbdbd;
+    border-right: 1px solid #6b6b6b;
+}
+
+#animation-one .box:after {
+    right: 0;
+    transform: translateX(100%) rotateX(-90deg) rotateY(90deg) translateY(100%);
+    background-color: #858585;
+}
+
+#animation-one .box.one { animation-delay: 0s }
+#animation-one .box.two { animation-delay: 0.3s }
+#animation-one .box.three { animation-delay: 0.6s }
+#animation-one .box.four { animation-delay: 0.9s }
+#animation-one .box.five { animation-delay: 1.2s }
+
+
+@-webkit-keyframes animationOneBounce {
+    from {
+        transform: translateZ(0);
+    }
+    to {
+        transform: translateZ(150px);
+    }
+}
+
+@-webkit-keyframes animationOneVolume {
+    from {
+        transform: rotateX(45deg) rotateZ(45deg) translateY(100px);
+    }
+    to {
+        transform: rotateX(60deg) rotateZ(45deg) translateY(100px);
+    }
+}

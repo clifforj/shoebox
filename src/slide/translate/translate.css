@@ -1,0 +1,65 @@
+#translate #scene {
+    width: 500px;
+    height: 400px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-top: 250px;
+    margin-left: 50px;
+}
+
+#translate #volume {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    -webkit-transform: rotateX(60deg) rotateZ(45deg);
+    -webkit-transform-style: preserve-3d;
+    background: -webkit-linear-gradient(left, rgb(167, 167, 167) 1.5%,transparent 1.5%,transparent 98.5%, rgb(173, 173, 173) 98.5%),-webkit-linear-gradient(rgb(204, 204, 204) 1.5%,transparent 1.5%,transparent 98.5%, rgb(184, 184, 184) 98.5%);
+    background-repeat: repeat;
+    background-size: 50px 50px;
+}
+
+#translate #browser {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    top: -200px;
+    -webkit-transform-origin: 0 100%;
+    -webkit-transform: rotateX(-90deg);
+    -webkit-transform-style: preserve-3d;
+    background-image: url('../image/browser.png');
+    background-size: 100% 100%
+}
+
+#translate #y {
+    position: absolute;
+    width: 40px;
+    height: 335px;
+    bottom: 50%;
+    -webkit-transform-origin: 0 100%;
+    -webkit-transform: rotateX(-90deg) rotateY(90deg) translateX(-45px);
+    background-image: url('../image/y.png');
+    background-size: 100% 100%
+}
+
+#translate #x {
+    position: absolute;
+    width: 500px;
+    height: 40px;
+    bottom: 50%;
+    -webkit-transform-origin: 0 100%;
+    -webkit-transform: translateY(45px);
+    background-image: url('../image/x.png');
+    background-size: 100% 100%
+}
+
+#translate #z {
+    position: absolute;
+    width: 40px;
+    height: 400px;
+    right: -50px;
+    background-image: url('../image/z.png');
+    background-size: 100% 100%
+}

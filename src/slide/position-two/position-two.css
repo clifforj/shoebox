@@ -1,0 +1,109 @@
+#position-two #scene {
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-left: 100px;
+}
+
+#position-two #content {
+    vertical-align: middle;
+    display: inline-block;
+    width: 1170px;
+}
+
+#position-two .volume {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    -webkit-transform: rotateX(60deg) rotateZ(45deg);
+    -webkit-transform-style: preserve-3d;
+    background: -webkit-linear-gradient(left, rgb(167, 167, 167) 1.5%,transparent 1.5%,transparent 98.5%, rgb(173, 173, 173) 98.5%),-webkit-linear-gradient(rgb(204, 204, 204) 1.5%,transparent 1.5%,transparent 98.5%, rgb(184, 184, 184) 98.5%);
+    background-repeat: repeat;
+    background-size: 50px 50px;
+}
+
+#position-two .volume:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 25px 50px 0;
+    border-color: #ffffff transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -25px;
+    left: 150px;
+}
+
+#position-two .volume:before {
+    position: absolute;
+    display: block;
+    width: 400px;
+    left: -45px;
+    z-index: 1;
+    bottom: -70px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #4e4e4e;
+}
+
+#position-two .volumeLeft {
+    -webkit-transform: rotateX(60deg) rotateZ(45deg) translateX(-200px) translateY(300px);
+}
+
+#position-two .volumeRight {
+    -webkit-transform: rotateX(60deg) rotateZ(45deg) translateY(-100px) translateX(250px);
+}
+
+#position-two #boxRightFront, #position-two #boxLeftFront {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    -webkit-transform-origin: 0 100%;
+    background-color: #565656;
+}
+
+#position-two #boxLeftFront {
+    bottom: 0;
+    -webkit-transform: rotateX(-90deg);
+    opacity: 0.8;
+}
+
+#position-two #boxRightFront {
+    bottom: 0;
+    -webkit-transform: rotateX(-90deg);
+}
+
+#position-two #boxRightSide, #position-two #boxLeftSide {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    -webkit-transform-origin: 0 100%;
+    background-color: #343434;
+}
+
+#position-two #boxRightSide {
+    right: 0;
+    bottom: 0;
+    transform: translateX(100%) rotateX(-90deg) rotateY(90deg);
+}
+
+#position-two #info {
+    box-sizing: border-box;
+    margin-top: 100px;
+    display: block;
+}
+
+#position-two pre {
+    width: 75%;
+    float: right;
+}
+
+#position-two pre:after
+{
+    left: 60%;
+}
