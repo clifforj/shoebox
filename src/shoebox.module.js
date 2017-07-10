@@ -27,6 +27,9 @@
             .when('/animation-one', {
                 templateUrl: 'slide/animation-one/animation-one.html'
             })
+            .when('/minecraft', {
+                templateUrl: 'slide/minecraft/minecraft.html'
+            })
             .otherwise('/title');
     }
 

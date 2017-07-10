@@ -1,0 +1,9 @@
+#minecraft.slide {
+    overflow: hidden;
+}
+
+.diorama {
+    display: inline-block;
+    zoom: 1;
+    margin-top: 170px;
+}

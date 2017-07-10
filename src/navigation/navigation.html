@@ -1,0 +1,8 @@
+<div class="buttons" ng-class="{'title-screen-buttons': vm.navService.onTitleScreen()}">
+    <button ng-click="vm.navService.previous()" ng-class="{'disabled': !vm.navService.hasPrevious()}">
+        Previous
+    </button>
+    <button ng-click="vm.navService.next()" ng-class="{'disabled': !vm.navService.hasNext()}">
+        Next
+    </button>
+</div>

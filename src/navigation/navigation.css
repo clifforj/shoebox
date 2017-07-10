@@ -1,0 +1,56 @@
+navigation {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    text-align: right;
+}
+
+navigation .buttons {
+    padding: 5px;
+}
+
+navigation button {
+    position: relative;
+    width: 20px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    text-indent: -200px;
+    overflow: hidden;
+}
+
+navigation button.disabled {
+    opacity: 0.2;
+}
+
+navigation button:hover {
+    cursor: pointer;
+}
+
+navigation button:focus {
+    outline: none;
+}
+
+navigation button:after
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent #353535;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: 0;
+}
+
+navigation button:first-child:after
+{
+    border-width: 20px 20px 20px 0;
+}
+
+navigation .title-screen-buttons button:after {
+    border-color: transparent #dddddd;
+}
