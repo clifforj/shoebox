@@ -1,0 +1,12 @@
+#fin ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    line-height: 34px;
+    font-size: 22px;
+}
+
+#fin a {
+    text-decoration: none;
+    color: #444;
+}

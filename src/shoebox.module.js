@@ -30,6 +30,9 @@
             .when('/minecraft', {
                 templateUrl: 'slide/minecraft/minecraft.html'
             })
+            .when('/fin', {
+                templateUrl: 'slide/fin/fin.html'
+            })
             .otherwise('/title');
     }
 

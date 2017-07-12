@@ -15,7 +15,8 @@
             '/position-two',
             '/box-complete',
             '/animation-one',
-            '/minecraft'
+            '/minecraft',
+            '/fin'
         ];
 
         return {

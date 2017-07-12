@@ -2,6 +2,15 @@
     background-color: #353535;
 }
 
+#title .slide-location {
+    position: absolute;
+    bottom: -31px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #cccccc;
+    font-size: 40px;
+}
+
 #title #scene {
     width: 600px;
     height: 500px;
